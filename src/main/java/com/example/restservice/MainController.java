@@ -37,7 +37,7 @@ public class MainController {
 		return "Saved";
 	}
 
-	@DeleteMapping(path="/del")
+	@DeleteMapping(path="/eliminar")
 	public @ResponseBody String delUser (@RequestParam Integer id) {
 		User n = new User();
 		n.setId(id);
